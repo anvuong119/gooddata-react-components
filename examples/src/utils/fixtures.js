@@ -2,7 +2,7 @@
 
 const demoProject = {
     "https://secure.gooddata.com": "k26dtejorcqlqf11crn6imbeevp2q4kg",
-    "https://staging3.intgdc.com": "kytra720hke4d84e8ozohoz7uycn53mi",
+    "https://staging3.intgdc.com": "jj0m1fje2qlu3v2q87t1btmq9g8mv43w",
     "https://staging2.intgdc.com": "ws7pxsamkx8o0t1s7kfvkj5o41uwcmqg",
     "https://staging.intgdc.com": "na1q8a0q4efb7cajbgre9mmm776dr1yv",
     "https://developer.na.gooddata.com": "xms7ga4tf3g3nzucd8380o2bev8oeknp",
@@ -47,10 +47,10 @@ export const treemapVisualizationUri = `/gdc/md/${demoProjectId}/obj/9283`;
 export const heatmapVisualizationIdentifier = "abkaJfMYiiCU";
 export const heatmapVisualizationUri = `/gdc/md/${demoProjectId}/obj/9284`;
 export const columnsVisualizationIdentifier = "aabOspdLbbvs";
-export const columnVisualizationIdentifier = "acFJltTsifSQ";
+export const columnVisualizationIdentifier = "aaVc3E8FfdN4";
 export const columnVisualizationMeasureValueFilterIdentifier = "aapcLmQzeIAz";
 export const tableVisualizationMeasureValueFilterTreatNullAsZeroIdentifier = "ab8GBmYngtMa";
-export const columnVisualizationUri = `/gdc/md/${demoProjectId}/obj/6862`;
+export const columnVisualizationUri = `/gdc/md/${demoProjectId}/obj/417`;
 export const comboVisualizationIdentifier = "aaTJJW6adsaj";
 export const comboVisualizationUri = `/gdc/md/${demoProjectId}/obj/9304`;
 export const dateDatasetIdentifier = "date.dataset.dt";
