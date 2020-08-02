@@ -145,7 +145,7 @@ function hideOverlappedLabels(chartOptions: IChartOptions) {
 
     // Set only for bar chart and labels are rotated by 90
     const isInvertedChart = isInvertedChartType(chartOptions.type);
-    if (isInvertedChart && isRotationInRange(rotation, 75, 105)) {
+    if (isInvertedChart && isRotationInRange(rotation, 91, 105)) {
         const { xAxes = [], isViewByTwoAttributes } = chartOptions;
 
         return {
