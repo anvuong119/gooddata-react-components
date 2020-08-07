@@ -68,25 +68,25 @@ describe("getCustomizedConfiguration", () => {
         expect(resultWithFormat.yAxis[0].labels.formatter).toBeDefined();
     });
 
-    it("should set formatter for xAxis labels to prevent overlapping for bar chart with 90 rotation", () => {
+    it("should set formatter for xAxis labels to prevent overlapping for bar chart with 91 rotation", () => {
         const result = getCustomizedConfiguration({
             ...chartOptions,
             type: "bar",
             xAxisProps: {
-                rotation: "90",
+                rotation: "91",
             },
         });
 
         expect(result.xAxis[0].labels.formatter).toBe(formatOverlapping);
     });
 
-    it("should set formatter for xAxis labels to prevent overlapping for stacking bar chart with 90 rotation", () => {
+    it("should set formatter for xAxis labels to prevent overlapping for stacking bar chart with 91 rotation", () => {
         const result = getCustomizedConfiguration({
             ...chartOptions,
             isViewByTwoAttributes: true,
             type: "bar",
             xAxisProps: {
-                rotation: "90",
+                rotation: "91",
             },
         });
 

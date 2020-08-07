@@ -113,12 +113,8 @@ export function formatOverlappingForParentAttribute(category: any) {
         return formatOverlapping.call(this);
     }
 
-    const categoriesCount = get(this, "axis.categoriesTree", []).length;
-    if (categoriesCount === 1) {
-        // Let the width be auto to make sure "this.value" is displayed on screen
-        return `<div style="overflow: hidden; text-overflow: ellipsis">${this.value}</div>`;
-    }
     const chartHeight = get(this, "axis.chart.chartHeight", 1);
+    const categoriesCount = get(this, "axis.categoriesTree", []).length;
     const width = Math.floor(chartHeight / categoriesCount);
     const pixelOffset = 40; // parent attribute should have more space than its children
 
@@ -130,12 +126,8 @@ export function formatOverlappingForParentAttribute(category: any) {
 }
 
 export function formatOverlapping() {
-    const categoriesCount = get(this, "axis.categories", []).length;
-    if (categoriesCount === 1) {
-        // Let the width be auto to make sure "this.value" is displayed on screen
-        return `<div align="center" style="overflow: hidden; text-overflow: ellipsis">${this.value}</div>`;
-    }
     const chartHeight = get(this, "chart.chartHeight", 1);
+    const categoriesCount = get(this, "axis.categories", []).length;
     const width = Math.floor(chartHeight / categoriesCount);
     const pixelOffset = 20;
 
@@ -151,9 +143,9 @@ export function formatOverlapping() {
 function hideOverlappedLabels(chartOptions: IChartOptions) {
     const rotation = Number(get(chartOptions, "xAxisProps.rotation", "0"));
 
-    // Set only for bar chart and labels are rotated by 90
+    // Set only for bar chart and labels are rotated by 91
     const isInvertedChart = isInvertedChartType(chartOptions.type);
-    if (isInvertedChart && isRotationInRange(rotation, 75, 105)) {
+    if (isInvertedChart && isRotationInRange(rotation, 91, 105)) {
         const { xAxes = [], isViewByTwoAttributes } = chartOptions;
 
         return {
